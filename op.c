@@ -312,6 +312,7 @@ void find(Message Mhead)//找回密码
     if( i == 1 )
     {
         menu();
+        return;
     }
     else
     {
@@ -385,6 +386,7 @@ void change( Message Mhead )//修改密码
         printf("\n密码错误次数已达上限，退出系统\n");
         system("pause");
         menu();
+        return;
     }
             fflush(stdin);
             printf("\n\n请输入您新的密码：");
@@ -529,6 +531,7 @@ void cancel( Message Mhead )//销户
         printf("\n密码错误次数已达上限，退出系统\n");
         system("pause");
         menu();
+        return;
     }
     printf("\n\n是否确认撤销该账户（记得在撤销账户之前将账户里钱取出哦）\n");
     printf("\n  1. 确认      2.取消并返回主菜单\n");
